@@ -1,0 +1,17 @@
+
+###############################################################################
+
+	Platformer Art Complete Pack by Kenney Vleugels (www.kenney.nl)
+
+	Modified by Chaoseiro - Made "Hills" base tileable and plotted the tiles
+		in a tileset ready to use in Tiled
+
+	------------------------------
+		
+		License (CC0)
+	http://creativecommons.org/publicdomain/zero/1.0/
+
+	You may use these graphics in personal and commercial projects.
+	Credit (Kenney or www.kenney.nl) would be nice but is not mandatory.
+
+###############################################################################
