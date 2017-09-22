@@ -110,5 +110,20 @@ namespace UnityStandardAssets._2D
             theScale.x *= -1;
             transform.localScale = theScale;
         }
+
+        void OnCollisionEnter2D(Collision2D other)
+        {
+            if (other.transform.tag == "MovingPlatform")
+            {
+                transform.parent = other.transform;
+            }
+        }
+        void OnCollisionExit2D(Collision2D other)
+        {
+            if (other.transform.tag == "MovingPlatform")
+            {
+                transform.parent = null;
+            }
+        }
     }
 }
