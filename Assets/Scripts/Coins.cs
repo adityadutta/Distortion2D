@@ -7,6 +7,8 @@ public class Coins : MonoBehaviour {
 
     private int count;
     public Text countText;
+    public AudioSource audioSource;
+    public AudioClip coinSound;
 
     // Use this for initialization
     void Start () {
@@ -23,7 +25,14 @@ public class Coins : MonoBehaviour {
             other.gameObject.SetActive(false);
             count++;
             SetCount();
+            playSound(coinSound);
         }
+    }
+
+    public void playSound(AudioClip clip)
+    {
+        audioSource.clip = clip;
+        audioSource.Play();
     }
 
     void SetCount()
